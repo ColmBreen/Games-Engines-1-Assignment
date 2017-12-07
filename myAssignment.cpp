@@ -36,7 +36,7 @@ bool myAssignment::Initialise()
 {
 	physicsFactory->CreateGroundPhysics();
 	physicsFactory->CreateCameraPhysics();
-	dynamicsWorld->setGravity(btVector3(0, -100, 0));
+	dynamicsWorld->setGravity(btVector3(0, -30, 0));
 	shared_ptr<PhysicsController> spider = CreateSpider(glm::vec3(0, 8, 0), 5);
 	if (!Game::Initialise()) {
 		return false;
